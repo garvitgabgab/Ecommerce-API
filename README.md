@@ -3,23 +3,23 @@ Regular Ecommerce API
 E-commerce API Documentation
 Welcome to the E-commerce API documentation! This API allows you to manage products, create new ones, update quantities, and delete items seamlessly. Follow the steps below to get started:
 
-Getting Started
+#Getting Started
 Initialize the Project:
 
-Run npm init in the project directory to set up the project dependencies.
-Start the Server:
+___Run npm init in the project directory to set up the project dependencies.
+#Start the Server:
 
-Launch the server by running node app.js.
+1.Launch the server by running node app.js.
 Explore with Postman:
 
-Use Postman to interact with the API.
+2.Use Postman to interact with the API.
 Viewing Products
-GET Request:
+3)GET Request:
 Make a GET request to localhost:3000/products to retrieve a list of available products.
 Creating a New Product
 Start the Server:
 
-Ensure the server is running.
+*Ensure the server is running.*
 POST Request:
 
 Set the URL to localhost:3000/products/create in Postman.
@@ -43,12 +43,12 @@ DELETE Request:
 Append the copied ID after localhost:3000/products/.
 Execute:
 
-Make a DELETE request.
-You'll receive a message confirming the successful deletion of the product.
+#Make a DELETE request.
+1)You'll receive a message confirming the successful deletion of the product.
 Updating Product Quantity
 Get the Product ID:
 
-Copy the object ID of the product you wish to update.
+--Copy the object ID of the product you wish to update.
 Build the URL:
 
 Append the ID after localhost:3000/products/.
@@ -60,9 +60,13 @@ Make a POST request to execute the quantity update.
 Confirmation:
 
 You'll receive a message containing details of the updated product.
-Tech Stack
+
+
+#Tech Stack
 Backend: Node.js
 Database: MongoDB
+
+
 This documentation should help you get started with our E-commerce API. Please ensure you have the necessary permissions and handle errors gracefully when using the API in a real-world application. If you have any questions or need further assistance, feel free to reach out to our support team. Happy coding!
 
 
