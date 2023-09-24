@@ -1,4 +1,4 @@
-const Product = require('../models/product');
+const Product = require('../models/product.js');
 
 // function to show all the products
 module.exports.products = function (req, res) {
@@ -25,7 +25,7 @@ module.exports.create = function (req, res) {
         if (err) {
             res.send(err);
         } else {
-            return res.redirect('/products');
+            return res.redirect('/products.js');
         }
     });
 }
