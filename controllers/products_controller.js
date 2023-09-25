@@ -14,21 +14,36 @@ module.exports.products = function (req, res) {
 // function to create a new product
 
 
-module.exports.create = function (req, res) {
-    console.log(req.body);
-
-    // Use the create method to create a new product
-    const newProduct = Product.create({
+module.exports.create = function(req, res){
+    const newProduct = new Product({
         name: req.body.name,
         quantity: req.body.quantity
-    }, (err, newProduct) => {
-        if (err) {
+    });
+    newProduct.save(function(err){
+        if(err){
             res.send(err);
-        } else {
-            return res.redirect('/products.js');
+        }else{
+            res.send('New product added successfully.');
         }
     });
 }
+
+
+// module.exports.create = function (req, res) {
+//     console.log(req.body);
+
+//     // Use the create method to create a new product
+//     const newProduct = Product.create({
+//         name: req.body.name,
+//         quantity: req.body.quantity
+//     }, (err, newProduct) => {
+//         if (err) {
+//             res.send(err);
+//         } else {
+//             return res.redirect('/products.js');
+//         }
+//     });
+// }
 
 
 
